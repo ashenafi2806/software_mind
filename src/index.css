@@ -1,0 +1,45 @@
+
+.nana
+{
+    color: black;
+}
+.scroll_trigger_one
+{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+     margin: 0;
+     left: 10vw;
+     top: 50px;
+     font-size: 40px;
+
+}
+.scroll_trigger_two
+{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    left: 50vw;
+    margin-top: -70px;
+    
+}
+.scroll_trigger_two p
+{
+    margin: 0;
+    font-size: 20px;
+
+}
+.scroll_trigger_two + a
+{
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    left: 50vw;
+    top: 30px;
+    color: rgb(244, 114, 1);    
+}
+.scroll_trigger_two + a > svg
+{
+    transition: transform 0.6s;
+}
+.scroll_trigger_two + a:hover > svg
+{
+    transform: translate(6px);
+}
