@@ -2,7 +2,7 @@ import Main from './main_page/main.jsx'
 import Carousel from './carousel.jsx'
 import './index.css'
 import VideoTestimonials from './VideoTestimonials.jsx'
-
+import CardCarousel from './state_card.jsx'
 function App() {
 
 
@@ -10,10 +10,9 @@ function App() {
     <>
 <Main></Main>
 <Carousel></Carousel>
-<div className="container mx-auto px-4 py-12">
-            <VideoTestimonials />
-          </div>
-    </>
+<CardCarousel></CardCarousel>
+<VideoTestimonials></VideoTestimonials>
+</>
   )
 }
 
