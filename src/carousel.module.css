@@ -1,9 +1,9 @@
-.carousel-wrapper {
+.carousel_wrapper {
     margin-top: 10vw;
     z-index: -1;
   }
   
-  .carousel-title {
+  .carousel_title {
     font-family: sans-serif;
     font-weight: bold;
     font-size: 3rem;
@@ -11,7 +11,7 @@
     margin-bottom: 2.5vw;
   }
   
-  .carousel-container {
+  .carousel_container {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -19,7 +19,7 @@
     background-color: white;
   }
   
-  .carousel-button {
+  .carousel_button {
     position: absolute;
     z-index: 10;
     top: 50%;
@@ -32,47 +32,47 @@
     border: none;
   }
   
-  .carousel-button.left {
+  .carousel_button.left {
     left: 1.5rem;
   }
   
-  .carousel-button.right {
+  .carousel_button.right {
     right: 1.5rem;
   }
 
-  .carousel-button.left:hover .chevron-icon
+  .carousel_button.left:hover .chevron_icon
 
   {
     transform: translate(-6px);
   }
 
-  .carousel-button.right:hover .chevron-icon
+  .carousel_button.right:hover .chevron_icon
 
   {
     transform: translate(6px);
   }
   
-  .chevron-icon {
+  .chevron_icon {
     color: orange;
     font-size: 1.5rem;
     transition: transform 0.4s ;
   }
   
-  .carousel-viewport {
+  .carousel_viewport {
     overflow: hidden;
     padding: 0 4rem;
   }
   
-  .carousel-track {
+  .carousel_track {
     display: flex;
     transition: transform 1s ease-in-out;
   }
   
-  .carousel-card-wrapper {
+  .carousel_card-wrapper {
     padding: 0 1rem;
   }
   
-  .carousel-card {
+  .carousel_card {
     background-color: white;
     border-radius: 0.75rem;
     padding: 2rem;
@@ -84,18 +84,18 @@
                 0 1px 3px rgba(0, 0, 0, 0.08);
   }
   
-  .card-percentage {
+  .card_percentage {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
   
-  .card-description {
+  .card_description {
     color: #4B5563;
     font-size: 1.125rem;
   }
   
-  .card-button {
+  .card_button {
     margin-top: 1.5rem;
     font-size: 0.875rem;
     font-weight: 500;
@@ -111,30 +111,30 @@
     transition: transform 0.3s ease-in-out;
   }
   
-  .card-button:hover .card-arrow {
+  .card_button:hover .card_arrow {
     transform: translateX(0.5rem);
   }
   
-  .card-arrow {
+  .card_arrow {
     vertical-align: middle;
     transition: transform 0.3s ease-in-out;
   }
   
-  .carousel-indicators {
+  .carousel_indicators {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
     gap: 0.5rem;
   }
   
-  .indicator-dot {
+  .indicator_dot {
     width: 0.75rem;
     height: 0.75rem;
     border-radius: 9999px;
     background-color: #D1D5DB;
   }
   
-  .indicator-dot.active {
+  .indicator_dot.active {
     background-color: orange;
   }
   

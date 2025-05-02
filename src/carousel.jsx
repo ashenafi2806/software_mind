@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { ChevronRight, ChevronLeft } from "lucide-react";
 import { useRef, useState } from "react";
-import "./carousel.css";
+import style from "./carousel.module.css";
 
 const stats = [
   { percentage: "6x", description: "Faster time of market" },
@@ -25,9 +25,9 @@ export default function Carousel() {
   };
 
   return (
-    <div className="carousel-wrapper">
+    <div className={style.carousel_wrapper}>
       <motion.h1
-        className="carousel-title"
+        className={style.carousel_title}
         initial={{ opacity: 0, y: "60px" }}
         whileInView={{
           opacity: 1,
@@ -39,17 +39,20 @@ export default function Carousel() {
         Results we’ve delivered
       </motion.h1>
 
-      <div className="carousel-container">
+      <div className={style.carousel_container}>
         {current > 0 && (
-          <button onClick={() => handleSlide("left")} className="carousel-button left">
-            <ChevronLeft className="chevron-icon" />
+          <button
+            onClick={() => handleSlide("left")}
+            className={`${style.carousel_button} ${style.left}`}
+          >
+            <ChevronLeft className={style.chevron_icon} />
           </button>
         )}
 
-        <div className="carousel-viewport">
+        <div className={style.carousel_viewport}>
           <div
             ref={containerRef}
-            className="carousel-track"
+            className={style.carousel_track}
             style={{
               transform: `translateX(-${(current * 100) / visibleCards}%)`,
               width: `${(stats.length * 100) / visibleCards}%`,
@@ -58,18 +61,18 @@ export default function Carousel() {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="carousel-card-wrapper"
+                className={style.carousel_card_wrapper}
                 style={{ width: `${100 / stats.length}%` }}
               >
-                <div className="carousel-card">
+                <div className={style.carousel_card}>
                   <div>
-                    <h2 className="card-percentage">{stat.percentage}</h2>
-                    <p className="card-description">{stat.description}</p>
+                    <h2 className={style.card_percentage}>{stat.percentage}</h2>
+                    <p className={style.card_description}>{stat.description}</p>
                   </div>
-                  <button className="card-button">
+                  <button className={style.card_button}>
                     <span>Learn more</span>
                     <svg
-                      className="card-arrow"
+                      className={style.card_arrow}
                       width="25"
                       height="25"
                       viewBox="0 0 24 24"
@@ -89,16 +92,21 @@ export default function Carousel() {
         </div>
 
         {current < maxIndex && (
-          <button onClick={() => handleSlide("right")} className="carousel-button right">
-            <ChevronRight className="chevron-icon" />
+          <button
+            onClick={() => handleSlide("right")}
+            className={`${style.carousel_button} ${style.right}`}
+          >
+            <ChevronRight className={style.chevron_icon} />
           </button>
         )}
 
-        <div className="carousel-indicators">
+        <div className={style.carousel_indicators}>
           {Array.from({ length: stats.length - visibleCards + 1 }).map((_, index) => (
             <div
               key={index}
-              className={`indicator-dot ${index === current ? "active" : ""}`}
+              className={`${style.indicator_dot} ${
+                index === current ? style.active : ""
+              }`}
             ></div>
           ))}
         </div>
