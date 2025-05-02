@@ -27,7 +27,7 @@ window.addEventListener('scroll',take)
     const svgmar = {
         verticalAlign:"middle"
     }    
-return(
+return( 
 <header>
 
 <nav>
@@ -190,6 +190,12 @@ return(
               </div>
 
 </div>
+
+
+
+
+
+
 
 <motion.h1 className='scroll_trigger_one'
 
