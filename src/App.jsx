@@ -3,11 +3,10 @@ import Carousel from './carousel.jsx'
 import './index.css'
 import VideoTestimonials from './VideoTestimonials.jsx'
 import CardCarousel from './state_card.jsx'
-<<<<<<< HEAD
+
 import Nav from './main_page/nav.jsx'
 
-=======
->>>>>>> 0a105c4b3d7816521eba401993b3cc6c1e67a8d2
+
 function App() {
 
 
