@@ -13,7 +13,6 @@ function App() {
 
   return (
     <>
-<<<<<<< HEAD
     <Nav></Nav>
  <Main></Main>
  <Carousel></Carousel>
@@ -23,13 +22,6 @@ function App() {
           </div>
 
     </>
-=======
-<Main></Main>
-<Carousel></Carousel>
-<CardCarousel></CardCarousel>
-<VideoTestimonials></VideoTestimonials>
-</>
->>>>>>> 0a105c4b3d7816521eba401993b3cc6c1e67a8d2
   )
 }
 
