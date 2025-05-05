@@ -9,7 +9,11 @@ export default function Nav()
 {
     
   const svgmar = {
-    verticalAlign:"middle"
+    verticalAlign:"middle",
+    position: "fixed",
+    left:"29.73vw",
+    top:"5px"
+    
 } 
 
  const [isTop,setisTop] = useState(true)

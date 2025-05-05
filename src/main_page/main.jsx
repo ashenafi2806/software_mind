@@ -11,7 +11,10 @@ function Main()
 {
 
   const svgmar = {
-    verticalAlign:"middle"
+    verticalAlign:"middle",
+    position: "relative",
+    left:"5.5vw",
+    top:"-23px"
 } 
 
 
@@ -105,7 +108,9 @@ viewport={{once:true}}
 
 <a href="">Learn more<svg style={svgmar} width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
   <polyline points="9 6 15 12 9 18" />
-</svg></a>
+</svg>
+
+</a>
 
 
 
